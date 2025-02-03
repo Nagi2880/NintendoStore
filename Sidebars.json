@@ -1,0 +1,20 @@
+[
+    {
+        "SidebarTitle":"My Nintendo Store",
+        "ButtonURL":"",
+        "Sidebarlist":[
+        {
+            "title":"Nintendo Switch lineup",
+            "URL":"https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_300/Dev/Global%20Navigation/lineup.png",
+            "link":"localhost:3000/switch",
+            "IsSVG":false
+        },
+        {
+            "title":"Accesories",
+            "URL":"https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_200/Dev/Global%20Navigation/procon.png",
+            "link":"localhost:3000/store/hardware",
+            "IsSVG":false
+        }
+    ]
+    }
+]
