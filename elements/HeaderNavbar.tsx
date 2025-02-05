@@ -1,12 +1,10 @@
 import React from 'react'
-import NavbarButton from './Button'
+import SideBarButton from './SideBarButton'
 
 function HeaderNavbar() {
   return (
     <div>
-        <NavbarButton
-        
-        />
+        <SideBarButton />
     </div>
   )
 }
