@@ -2,6 +2,7 @@ import React from 'react'
 import SideBarElement from './SideBarElement'
 import SVG from './SVG'
 import sidebarData from '@/Data/HeaderButtonsDataTwo.json'
+import Arrowbutton from './Reusable SVGS/Arrowbutton'
 const SideBarButton = () => {
     return (
         <div>
@@ -16,7 +17,10 @@ const SideBarButton = () => {
                     TestID={item.SVGTestID}
 
                     />: null}
-                        <span>{item.ButtonTitle}</span>
+                        <span>
+                            {item.ButtonTitle}
+                            <Arrowbutton />
+                        </span>
                     </div>
                     <ul>
                         {item.Sidebarlist.map((element, elementIndex) =>(
