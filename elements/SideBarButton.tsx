@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SideBarElement from './SideBarElement'
 import SVG from './SVG'
 import sidebarData from '@/Data/HeaderButtonsDataTwo.json'
@@ -11,8 +11,11 @@ const SideBarButton = () => {
     const toggleLista = (index : number) => {
 
         setActiveIndex(activeIndex === index ? null : index);
-};
+    };
 
+    useEffect(()=> {
+        //Effect for HederNavbar only
+    }, [activeIndex])
 
     return (
         <div>
@@ -28,12 +31,22 @@ const SideBarButton = () => {
                     TestID={item.SVGTestID}
                     />
                     ) : null}
-                    
-                        <button onClick={() => toggleLista(index)} className='SidebarButton-container'>
+                        {/* Condición para el botón "News & Events" */}
+                        {item.Havelist === false ? (
+                            // Aquí renderizas el botón como un simple botón sin lista ni <Arrowbutton />
+                            <button className="SidebarButton-container">
+                                {item.ButtonTitle}
+                            </button>
+                        ) : (
+                        // Este es el comportamiento para los demás botones, con el <Arrowbutton /> y la lista
+                        <button onClick={() => toggleLista(index)} className="SidebarButton-container">
                             {item.ButtonTitle}
                             <Arrowbutton />
                         </button>
+                        )}
                     </div>
+
+
                     {activeIndex === index && (
 
                     <ul>

@@ -8,6 +8,7 @@
         "SVGWidth":16,
         "SVGRole":"Presentation",
         "SVGTestID":"MyNintendoTileIcon",
+        "Havelist": true,
         "Sidebarlist":[
             {
                 "title":"Games",
@@ -85,6 +86,7 @@
         "SVGviewbox":"0 0 32 32",
         "SVGWidth":18,
         "SVGRole":"Presentation",
+        "Havelist": true,
         "SVGTestID":"DPadIcon",
         "Sidebarlist":[
             {
@@ -146,6 +148,7 @@
         "SVGWidth":18,
         "SVGRole":"Presentation",
         "SVGTestID":"SwitchIcon",
+        "Havelist": true,
         "Sidebarlist":[
             {
                 "title":"Nintendo Switch lineup",
@@ -180,6 +183,7 @@
         "SVGWidth":16,
         "SVGRole":"Presentation",
         "SVGTestID":"Newsicon",
+        "Havelist": false,
         "Sidebarlist":[]
     },
     {
@@ -191,6 +195,7 @@
         "SVGWidth":16,
         "SVGRole":"Presentation",
         "SVGTestID":"Newsicon",
+        "Havelist":true,
         "Sidebarlist":[
             {
                 "title":"For kids",

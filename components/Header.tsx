@@ -1,10 +1,10 @@
-import SideBarButton from '@/elements/SideBarButton'
+import HeaderNavbar from '@/elements/HeaderNavbar'
 import React from 'react'
 
 function Header() {
   return (
     <div> 
-      <SideBarButton />
+      <HeaderNavbar />
     </div>
   )
 }
