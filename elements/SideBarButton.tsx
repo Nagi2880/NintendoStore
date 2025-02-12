@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import SideBarElement from './SideBarElement'
 import SVG from './SVG'
-import sidebarData from '@/Data/HeaderButtonsDataTwo.json'
+import sidebarData from '@/Data/HeaderButtonsData.json'
 import Arrowbutton from './Reusable SVGS/Arrowbutton'
 
 const SideBarButton = () => {

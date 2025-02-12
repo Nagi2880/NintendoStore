@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import SideBarButton from './SideBarButton'
+import Button from './Button'
 
 function HeaderNavbar() {
   
   return (
     <div>
-        <SideBarButton />
+    <Button
+    Url=""
+    Title="Support"
+    />
     </div>
   )
 }
