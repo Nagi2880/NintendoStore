@@ -1,27 +1,32 @@
 import React from 'react'
 import Link from 'next/link';
-import ButtonData from '@/Data/HeaderButtonsData.json'
 import SVG from './SVG';
 
 interface NavBarProps{
     Url: string;
     Title: string;
+    IsSVG: boolean;
+    SVGPathd: string | string[];
+    Viewbox: string;
+    Width: number;
+    Role: string;
+    TestID: string
 
 }
 
-const Button: React.FC<NavBarProps> = ({ Url, Title }) => {
+const Button: React.FC<NavBarProps> = ({ Url, Title, IsSVG, SVGPathd, Viewbox, Width, Role, TestID }) => {
   return (
-    {ButtonData.map((item, index: number) => (
-      <div key={index}>
-        <div>
-          {item.IsSVG ? <SVG />}
-        </div>
-      </div>
-    ))
-
-    }
-
     <div>
+      {IsSVG == true ?( 
+        <SVG
+        Pathd={SVGPathd}
+        Viewbox={Viewbox}
+        Width={Width}
+        Role={Role}
+        TestID={TestID}
+      />
+      ) 
+      : null}
         <Link href={Url}>
             <span>{Title}</span>
         </Link>  

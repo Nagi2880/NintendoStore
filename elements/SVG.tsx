@@ -7,11 +7,9 @@ interface SVGProps {
   Width?: number;
   Role?: string;
   TestID?: string;
-  Scale?: number;
-
 }
 
-const SVG: FC<SVGProps> =  ({ Pathd, Viewbox, Width, Role, TestID,  }) => {
+const SVG: FC<SVGProps> =  ({ Pathd, Viewbox, Width, Role, TestID }) => {
   return (
   <div>
     <svg viewBox={Viewbox} width={Width} role={Role} data-testid={TestID} xmlns="http://www.w3.org/2000/svg" color="currentColor">

@@ -1,5 +1,5 @@
 import HeaderNavbar from '@/elements/HeaderNavbar'
-import SideBarButton from '@/elements/SideBarButton'
+import SideBarButton from '@/elements/HeaderSideBarButton'
 import React from 'react'
 
 function Header() {
