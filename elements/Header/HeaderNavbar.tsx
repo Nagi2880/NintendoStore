@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button'
+import Button from '../Button'
 import ButtonData from '@/Data/HeaderButtonData.json'
 function HeaderNavbar() {
   

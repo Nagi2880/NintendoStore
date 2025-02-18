@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useState } from 'react'
-import SideBarElement from './SideBarElement'
-import SVG from './SVG'
+import SideBarElement from '../SideBarElement'
+import SVG from '../SVG'
 import sidebarData from '@/Data/HeaderSidebarData.json'
-import Arrowbutton from './Reusable SVGS/Arrowbutton'
+import Arrowbutton from '../Reusable SVGS/Arrowbutton'
 
 const SideBarButton = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
