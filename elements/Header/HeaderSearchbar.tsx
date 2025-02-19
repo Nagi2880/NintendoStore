@@ -4,8 +4,10 @@ import { categories } from '../../Data/categories'
 import Arrowbutton from '../Reusable SVGS/Arrowbutton'
 import { useState } from 'react';
 import Link from 'next/link';
+import SearchSVG from '../Reusable SVGS/SearchSVG';
 
 export const HeaderSearchbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -20,7 +22,7 @@ export const HeaderSearchbar = () => {
         <div>
             <div>
                 <button>   
-                    {/*here comes the search svg*/}
+                    <SearchSVG />
                     <span>
                         Search
                     </span>
